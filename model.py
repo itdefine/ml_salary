@@ -21,5 +21,4 @@ y = dataset.iloc[:, -1]
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X, y)
-print("model generated")
 pickle.dump(regressor, open('hiring.pkl', 'wb'))
